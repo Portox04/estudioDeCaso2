@@ -22,7 +22,9 @@ public class Prueba3 {
         //Quemar datos en la matriz creada
         matrizRooms = Room.dataWriter(matrizRooms);
         //Iniciar menu
-        while (true) {
+        boolean menu = true;
+        while (menu) {
+            
             int menuSelector = Integer.parseInt(JOptionPane.showInputDialog(//Menu
                     "Bienvenido al sistema de Habitaciones del Hotel Fidelitas\nSeleccione su opcion"
                     + "\n1-Ver Habitaciones"
@@ -44,6 +46,7 @@ public class Prueba3 {
                     break;
                 case 4:
                     JOptionPane.showMessageDialog(null, "Gracias por utilizarnos");
+                    menu = false;
                     break;
                 default:
                     break;
